@@ -1,0 +1,129 @@
+drop down check
+
+<div class="image1">
+    <div class="nav-bar">
+        <img src="images/Image1a.png" class="logoo">
+        <div class="dropdown">
+            <span class="dropword">Vehicle</span>
+            <div class="dropdown-content">
+                <p>model S</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropword{
+    font-weight: bold;
+    /* margin-top: 50px; */
+    /* padding-top: 20px; */
+    position: relative;
+    margin-left: 500px;
+    position: absolute; 
+    top: 0.1px; 
+    left: 10px; 
+    width: 100px; 
+    height: auto;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  
+
+<ul class="nav-list"><b>
+    <li class="nav-item">
+        Vehicles
+        <ul class="dropdown">
+            <li>Model S</li>
+            <li>Model 3</li>
+            <li>Model Y</li>
+        </ul>
+    </li>
+    
+
+    <li class="nav-item">
+        Energy
+        <ul class="dropdown">
+            <li>Solar Panel</li>
+            <li>Solar Roof</li>
+            <li>PowerWall</li>
+        </ul>
+    </li>
+    
+
+    <li class="nav-item">
+        Charging
+        <ul class="dropdown">
+            <li>Charging</li>
+            <li>Home Charging</li>
+            <li>SuperCharging</li>
+        </ul>
+    </li>
+    
+
+    <li class="nav-item">
+        Discover
+        <ul class="dropdown">
+            <li>Resources</li>
+            <li>Location Services</li>
+            <li>Company</li>
+        </ul>
+    </li>
+    
+
+    <li class="nav-item">
+        Shop
+        <ul class="dropdown">
+            <li>Charging</li>
+            <li>Apparel</li>
+            <li>Lifestyle</li>
+        </ul>
+    </li>
+   
+</b></ul>
+</div>
+
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+   }
+   
+   
+   .nav-item{
+       position: relative;
+       color: rgb(255, 255, 255);
+    
+   }
+   
+   .nav-item:hover .dropdown-content {
+       display: block;
+     }
+   
+   .dropdown{
+     display: none;
+     position: absolute;
+     background-color: pink;
+     min-width: 160px;
+   }
